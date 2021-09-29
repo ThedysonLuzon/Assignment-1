@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./content/app.css">
+
+</head>
+
+<body>
+
+  <!-- header section -->
+  <%- include('./components/header.ejs'); %> <!-- includes header partial -->
+  <!-- header section -->
+
+  <!-- Main Content -->
+    <main>
+   <%- include('./content/' + page + '.ejs'); %> <!-- includes main content partials -->
+    </main>
+  <!-- Main Content -->
+
+  <!-- Footer Section -->
+    <%- include('./components/footer.ejs'); %> <!-- includes footerr partial -->
+  <!-- Footer Section -->
+
+  <!-- Script Section -->
+      <script src="./scripts/app.js"></script>
+      <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="./jquery/dist/jquery.min.js"></script>
+</body>
+ <!-- Student Name: Thedyson Luzon | #301127562  -->
+</html>
